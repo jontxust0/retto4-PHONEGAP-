@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zornotza Hawks</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!------------------------------CSS------------------------------------------------------------>
+	<link href="views/css/index.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="views/css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!----------------------------SCRIPTS---------------------------------------------------------->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" x
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="views/js/jsFunctions.js"></script>
+	<script src="views/js/vRanking.js"></script>
+	<script src="views/js/jquery-1.11.3.min.js"></script>
+	<script src="views/js/jquery.mobile-1.4.5.js"></script>
+	<!----------------------------------------------------------------------------------------->
+
+</head>
+<body>
+    
+    
+      <br>
+      <div data-role="page" id="inicio">
+		<div>
+			<img src="views/img/header.png" id="header">
+		</div>
+      <select id="categoriaSelect" class="select-css">
+		  
+      </select>
+	  <div id="ranking"></div>
+	  <nav class="navbar navbar-light bg-light" id="footer">
+		<div class="iconos">
+		  <a href="#iniciosesion" data-transition="slide"><button id="iniciarsesion">Iniciar Sesión</button></a>
+		  <a href="https://www.facebook.com/"><img src="views/img/iconos/facebook.png" alt="" srcset="" height="50px"></a>
+		  <a href="https://www.twitter.com"><img src="views/img/iconos/twitter.jpg" alt="" srcset="" height="50px"></a>
+		  <a href="https://www.instagram.com/"><img src="views/img/iconos/instagram.png" alt="" srcset="" height="50px"></a>
+		</div>
+		</nav>
+	  </div>
+	  
+	  <div id="iniciosesion" data-role="page">
+		<div>
+			<img src="views/img/header.png" id="header">
+		</div>
+		  
+		  <form action="">
+			<label for="usuario">Usuario</label><input id="name" type="text" placeholder="Escribe aquí..">
+			<label for="contraseña">Contraseña</label><input id="password" type="password" placeholder="Escribe aquí..">
+			<a href="#votar" data-transition="slide"><button id="iniciar">Iniciar Sesión</button></a>
+		  </form>
+		  <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#inicio" data-transition="slide" data-icon="home">Volver</a></li>
+                </ul>
+            </div>
+        </div>   
+	  </div>
+
+	  <div id="votar">
+		<div id="btnVotar" class="navbar-nav">
+                    
+		</div>
+		  <div id="btnUsuario" class="navbar-nav navbar-right">
+		  
+		</div>
+	  </div>
+</body>
+</html>

@@ -55,9 +55,9 @@ $(document).ready(function(){
             }
             htmlzatia+="</table>";
             
-            $("#ranking").hide();
-            $("#ranking").html(htmlzatia);
-            $("#ranking").slideToggle();
+            $("#votos").hide();
+            $("#votos").html(htmlzatia);
+            $("#votos").slideToggle();
             
             
             },
